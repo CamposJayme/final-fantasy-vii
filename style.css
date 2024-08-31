@@ -6,10 +6,19 @@
     src: url("fonts/Runic\ MT\ Std\ Condensed.otf");
 }
 
+.container-fluid-max-width {
+    max-width: 1440px;
+}
+
 .header a {
     text-decoration: none;
-    font-size: 28px;
+    font-size: 30px;
     font-family: 'Runic MT Std Condensed';
     text-transform: uppercase;
+    letter-spacing: 2px;
     color: #fff;
+}
+
+.navbar-gap {
+    gap: 10px;
 }
