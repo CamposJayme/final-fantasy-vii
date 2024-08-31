@@ -9,13 +9,49 @@
 </head>
 <body>
     
-    <header>
-        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-            <div class="container-fluid header">
-                <a href="#">Final Fantasy VII</a>
+    <header class="header">
+        <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-fluid container-fluid-max-width">
+              <a href="#">Final Fantasy VII</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0 navbar-gap">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">História</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Personagens</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Fotos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Vídeos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Notícias
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Trilogia Remake</a></li>
+                      <li><a class="dropdown-item" href="#">Crossover</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Square Enix</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Digite aqui" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
             </div>
-        </nav>
+          </nav>
     </header>
+
+    
 
     <script src="lib/bootstrap.bundle.min.js"></script>
 
