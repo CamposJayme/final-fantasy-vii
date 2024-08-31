@@ -22,3 +22,7 @@
 .navbar-gap {
     gap: 10px;
 }
+
+.calc-height {
+    height: calc(100vh - 77px);
+}
