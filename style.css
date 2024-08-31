@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/* Importação da fonte original do game =D */
+@font-face {
+    font-family: 'Runic MT Std Condensed';
+    src: url("fonts/Runic\ MT\ Std\ Condensed.otf");
+}
+
+.header a {
+    text-decoration: none;
+    font-size: 28px;
+    font-family: 'Runic MT Std Condensed';
+    text-transform: uppercase;
+    color: #fff;
+}
