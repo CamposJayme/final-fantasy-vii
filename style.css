@@ -10,6 +10,10 @@
     max-width: 1440px;
 }
 
+.header {
+    z-index: 1000;
+}
+
 .header a {
     text-decoration: none;
     font-size: 30px;
@@ -21,6 +25,21 @@
 
 .navbar-gap {
     gap: 10px;
+}
+
+main {
+    background-color: #201f1f;
+}
+
+main h2 {
+    color: #fff;
+    font-family: 'Runic MT Std Condensed';
+    letter-spacing: 2px;
+    text-transform: uppercase   ;
+}
+
+.card img {
+    background-color: rgba(0, 0, 0, 0.834);
 }
 
 @media screen and (min-width: 768px) {
