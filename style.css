@@ -33,15 +33,6 @@
     }    
 }
 
-@media screen and (max-width: 767px) {
-    .carousel-item img {
-        width: 100%;
-        height: auto;
-        min-height: calc(100vh - 77px);
-        object-fit: cover;
-    }
-}
-
 main {
     background-color: #201f1f;
 }
