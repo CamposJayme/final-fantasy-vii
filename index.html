@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Fantasy VII</title>
     <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,6 +13,9 @@
     <header class="header position-sticky top-0">
         <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
             <div class="container-fluid container-fluid-max-width">
+              <i class="bi bi-volume-up me-4">
+                <audio src="prelude-theme.mp3"></audio>
+              </i>
               <a href="#">Final Fantasy VII</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -161,6 +165,18 @@
     </main>
 
     <script src="lib/bootstrap.bundle.min.js"></script>
-
+    <script>
+        const audioIcon = document.querySelector('.bi');
+        audioIcon.addEventListener('click', function() {
+          audioIcon.classList.toggle('active')
+          const audioSong = document.querySelector('audio')
+          if(audioIcon.classList.contains('active')) {
+            audioSong.currentTime = 0.2
+            audioSong.play()
+          } else {
+            audioSong.pause();
+          }
+        });
+    </script>
 </body>
 </html>

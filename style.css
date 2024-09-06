@@ -6,6 +6,11 @@
     src: url("fonts/Runic\ MT\ Std\ Condensed.otf");
 }
 
+.bi {
+    color: #fff;
+    cursor: pointer;
+}
+
 .container-fluid-max-width {
     max-width: 1440px;
 }
