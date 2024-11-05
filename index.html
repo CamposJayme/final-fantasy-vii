@@ -32,10 +32,7 @@
                     <a class="nav-link" href="#personagens">Personagens</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Fotos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Vídeos</a>
+                    <a class="nav-link" href="#">Mídia</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -94,6 +91,7 @@
     </div>
 
     <main class="p-5">
+      <!-- PERSONAGENS - INÍCIO -->
       <div class="container" id="personagens">
         <div class="row">
           <h2>Personagens</h2>
@@ -103,7 +101,27 @@
               <div class="card-body">
                 <h3 class="card-title">Cloud Strife</h3>
                 <p class="card-text">Protagonista da franquia e ex-soldier de primeira classe, Cloud decide começar uma nova vida trabalhando como mercenário. Antes de sua primeira missão, ele reencontra Tifa, sua amiga de infância.</p>
-                <a href="#" class="btn btn-success">Ler mais</a>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Ler mais
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Cloud Strife</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Nascido em Nibel
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fechar</button>
+                </div>
               </div>
             </div>
           </div>
@@ -165,6 +183,10 @@
 
         </div>
       </div>
+      <!-- PERSONAGENS - FIM -->
+
+      <!-- GALERIA DE MÍDIA - INÍCIO -->
+      <!-- GALERIA DE MÍDIA - FIM -->
     </main>
 
 </body>
