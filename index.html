@@ -6,7 +6,9 @@
     <title>Final Fantasy VII</title>
     <link rel="stylesheet" href="lib/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script type="module" src="script.js"></script>
 </head>
 <body>
     
@@ -14,7 +16,8 @@
         <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
             <div class="container-fluid container-fluid-max-width">
               <i class="bi bi-volume-up me-4">
-                <audio src="prelude-theme.mp3"></audio>
+                <div class="no-audio"></div>
+                <audio src="media/prelude-theme.mp3" loop="true"></audio>
               </i>
               <a href="#">Final Fantasy VII</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -99,7 +102,7 @@
               <img class="card-img-top" src="https://fyre.cdn.sewest.net/ffvii-hub/656a78e6aed7bb35a2d07612/cloud-headshot-B8oskU3Wa.png?quality=85&width=2048" alt="">
               <div class="card-body">
                 <h3 class="card-title">Cloud Strife</h3>
-                <p class="card-text">Protagonista da franquia e ex-soldado de primeira classe, Cloud decide começar uma nova vida trabalhando como mercenário. Antes de sua primeira missão, ele reencontra Tifa, sua amiga de infância.</p>
+                <p class="card-text">Protagonista da franquia e ex-soldier de primeira classe, Cloud decide começar uma nova vida trabalhando como mercenário. Antes de sua primeira missão, ele reencontra Tifa, sua amiga de infância.</p>
                 <a href="#" class="btn btn-success">Ler mais</a>
               </div>
             </div>
@@ -110,7 +113,7 @@
               <img class="card-img-top" src="https://fyre.cdn.sewest.net/ffvii-hub/656a7b5c98774a5fd6a03324/tifa-headshot-xaaqZRyR2.png?quality=85&width=2048" alt="">
               <div class="card-body">
                 <h3 class="card-title">Tifa Lockhart</h3>
-                <p class="card-text">Uma das heroínas da franquia e lutadora de artes marciais. Ela é dona de um bar nas favelas do setor 7 de Midgar, e responsável por contratar Cloud em sua primeira missão como mercenário. </p>
+                <p class="card-text">Uma das heroínas da franquia e lutadora de artes marciais. Ela cresceu junto com Cloud na infância, é a responsável por contratá-lo em sua primeira missão como mercenário.</p>
                 <a href="#" class="btn btn-success">Ler mais</a>
               </div>
             </div>
@@ -164,19 +167,5 @@
       </div>
     </main>
 
-    <script src="lib/bootstrap.bundle.min.js"></script>
-    <script>
-        const audioIcon = document.querySelector('.bi');
-        audioIcon.addEventListener('click', function() {
-          audioIcon.classList.toggle('active')
-          const audioSong = document.querySelector('audio')
-          if(audioIcon.classList.contains('active')) {
-            audioSong.currentTime = 0.2
-            audioSong.play()
-          } else {
-            audioSong.pause();
-          }
-        });
-    </script>
 </body>
 </html>

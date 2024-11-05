@@ -9,6 +9,26 @@
 .bi {
     color: #fff;
     cursor: pointer;
+    border: 1.5px solid #fff;
+    padding: 8px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.no-audio {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    background-color: #fff;
+    display: block;
+    height: 1px;
+    width: 75%;
+    transform: rotate(130deg);
+}
+
+i.active .no-audio {
+    display: none;
 }
 
 .container-fluid-max-width {
