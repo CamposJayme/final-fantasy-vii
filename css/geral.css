@@ -2,7 +2,7 @@
 
 /* Importação da fonte original do game =D */
 @font-face {
-    font-family: 'Runic MT Std Condensed';
+    font-family: 'Runic MT Std Condensed', "Arial", "Sans-serif";
     src: url("fonts/Runic\ MT\ Std\ Condensed.otf");
 }
 
