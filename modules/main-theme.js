@@ -1,14 +1,15 @@
 export default function initTheme() {
     const audioIcon = document.querySelector('.bi');
+    const mainTheme = new Audio('../media/prelude-theme.mp3');
 
+    mainTheme.loop = true;
     audioIcon.addEventListener('click', function() {
-        audioIcon.classList.toggle('active')
-        const audioSong = document.querySelector('audio')
-        if(audioIcon.classList.contains('active')) {
-            audioSong.currentTime = 0.2
-            audioSong.play()
+        if (mainTheme.paused) {
+            mainTheme.play();
+            audioIcon.classList.add('active');
         } else {
-            audioSong.pause();
+            mainTheme.pause();
+            audioIcon.classList.remove('active');
         }
     });
 }
